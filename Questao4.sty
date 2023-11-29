@@ -1,21 +1,34 @@
-4)
-
+// Online C compiler to run C program online
 #include <stdio.h>
 
 int Somar (){
-int soma, N1, N2;
-scanf("%d", &N1);
-scanf("%d", &N2);
+int soma, soma2, soma3, soma4, soma5, soma6;
+int N1, N2, N3, N4;
+printf("Digite dois números:\n");
+scanf("%d %d", &N1,&N2);
+printf("Digite outros dois números:\n");
+scanf("%d %d", &N3,&N4);
 
-if ((N1< 0) || (N2<0)) {
-printf ("Um dos Números são Negativos!");
+if (((N1< 0) || (N2<0))||((N3< 0) || (N4<0)))  {
+printf ("Um dos Números são Negativos!\n");
 } else{
 soma = N1+N2;
-printf("%d", soma);
+soma2 = N3+N4;
+soma3 = N1+N3;
+soma4 = N1+N4;
+soma5 = N2+N3;
+soma6 = N2+N4;
+printf("%d\n", soma);
+printf("%d\n", soma2);
+printf("%d\n", soma3);
+printf("%d\n", soma4);
+printf("%d\n", soma5);
+printf("%d\n", soma6);
 }
 }
 
 int main (void) {
 Somar();
+// Tal parametro tambem pode ser sintetizado utilizando um laço para cobrir as variáveis de N1 a N4 em suas determinadas somas.
 return 0;
 }
